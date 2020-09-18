@@ -61,7 +61,7 @@ arduino_compile() {
 
    keymapHeaderFile="$keyboardsPath/$keyboard/keymaps/$keymap/keymap.h"
    keymapSourceFile="$keyboardsPath/$keyboard/keymaps/$keymap/keymap.cpp"
-   configFile="$keyboardsPath/$keyboard/$target/keyboard_config.h"
+   configFile="$keyboardsPath/$keyboard/config/single/keyboard_config.h"
 
    cp -f $keymapHeaderFile $sourcePath/
    cp -f $keymapSourceFile $sourcePath/
