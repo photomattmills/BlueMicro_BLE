@@ -24,26 +24,25 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
  * keymap
  */
  std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
-     {KEYMAP( /* qwerty */
-         KC_EQL,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,  KC_F6,   \
-         KC_TAB,  _______, KC_F12, _______, _______, _______,  _______,  \
-         KC_LCTL,  _______, _______, _______, _______, _______,  _______, \
-         KC_LSFT,  _______, _______, _______, _______, _______,   KC_DEL,  \
-         KC_ESC,  KC_GRV,   KC_LBRC, KC_RBRC, KC_LSFT, KC_LGUI,   KC_ENT,  \
-         KC_ESC,  KC_GRV,   KC_LBRC, KC_RBRC, KC_LSFT, KC_LGUI,   KC_ENT,  \
-       )
+     {KEYMAP(
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME \
      )};
 
  void setupKeymap() {
 
      uint32_t layer1[MATRIX_ROWS][MATRIX_COLS] =
      KEYMAP(
-       KC_EQL,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,  KC_F6,   \
-       KC_TAB,  _______, KC_F12, _______, _______, _______,  _______,  \
-       KC_LCTL,  _______, _______, _______, _______, _______,  _______, \
-       KC_LSFT,  _______, _______, _______, _______, _______,   KC_DEL,  \
-       KC_ESC,  KC_GRV,   KC_LBRC, KC_RBRC, KC_LSFT, KC_LGUI,   KC_ENT,  \
-       KC_ESC,  KC_GRV,   KC_LBRC, KC_RBRC, KC_LSFT, KC_LGUI,   KC_ENT,  \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME \
      );
 
      /*
@@ -65,26 +64,26 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
  */
 
  std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
-     {KEYMAP( /* qwerty */
-         KC_EQL,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,  KC_F6,   \
-         KC_TAB,  _______, KC_F12, _______, _______, _______,  _______,  \
-         KC_LCTL,  _______, _______, _______, _______, _______,  _______, \
-         KC_LSFT,  _______, _______, _______, _______, _______,   KC_DEL,  \
-         KC_ESC,  KC_GRV,   KC_LBRC, KC_RBRC, KC_LSFT, KC_LGUI,   KC_ENT,  \
-         KC_ESC,  KC_GRV,   KC_LBRC, KC_RBRC, KC_LSFT, KC_LGUI,   KC_ENT,  \
-       )
+     {KEYMAP(
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+       KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME \
      )};
 
  void setupKeymap() {
 
      uint32_t layer1[MATRIX_ROWS][MATRIX_COLS] =
      KEYMAP(
-       KC_EQL,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,  KC_F6,   \
-       KC_TAB,  _______, KC_F12, _______, _______, _______,  _______,  \
-       KC_LCTL,  _______, _______, _______, _______, _______,  _______, \
-       KC_LSFT,  _______, _______, _______, _______, _______,   KC_DEL,  \
-       KC_ESC,  KC_GRV,   KC_LBRC, KC_RBRC, KC_LSFT, KC_LGUI,   KC_ENT,  \
-       KC_ESC,  KC_GRV,   KC_LBRC, KC_RBRC, KC_LSFT, KC_LGUI,   KC_ENT,  \
+           KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+           KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+           KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+           KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+           KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME, \
+           KC_EQL,  KC_1,    KC_2,     KC_3,    KC_4,  KC_5, KC_HOME \
+
      );
 
      /*

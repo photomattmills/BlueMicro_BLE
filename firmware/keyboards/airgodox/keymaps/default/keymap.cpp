@@ -15,7 +15,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 */
-#include "keymap.h"
+#include "./keymap.h"
 
 #if KEYBOARD_SIDE == LEFT
 
@@ -23,7 +23,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
  * initiialize the default layer (QWERTY/PRESS) with the following
  * keymap
  */
-std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
+extern std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
     {{
         {KC_ESC,    KC_Q,    KC_W,    KC_E,     KC_R,     KC_T},
         {KC_TAB,      KC_NO,    KC_S,    KC_CAP_D, KC_F,     KC_G},
@@ -32,9 +32,9 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
     }};
 
 /*
- * add extra layers or single keys to this function 
+ * add extra layers or single keys to this function
  */
-void setupKeymap() 
+void setupKeymap()
 {
     uint32_t layer1[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
@@ -54,8 +54,8 @@ void setupKeymap()
         }
     }
 
-    /* 
-     * add special, single activations with the 
+    /*
+     * add special, single activations with the
      * layer, activation method and activation
      */
     matrix[2][3].addActivation(_QWERTY, Method::MT_TAP, KC_Y);
@@ -68,7 +68,7 @@ void setupKeymap()
  * TODO: configure right side
  */
 
-std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
+extern std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
     {{
         {KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,   KC_BSPC,},
         {KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,KC_ENTER,},
@@ -76,7 +76,7 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
         {KC_RSFT, KC_SPC,  LAYER_1, KC_NO,   KC_NO,   KC_NO}
     }};
 
-void setupKeymap() 
+void setupKeymap()
 {
     uint32_t layer1[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
@@ -96,8 +96,8 @@ void setupKeymap()
         }
     }
 
-    /* 
-     * add special, single activations with the 
+    /*
+     * add special, single activations with the
      * layer, activation method and activation
      */
     matrix[2][3].addActivation(_QWERTY, Method::MT_TAP, KC_Y);
@@ -106,4 +106,3 @@ void setupKeymap()
 
 
 #endif /* KEYBOARD_SIDE */
-
